@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.js"></script>
+</head>
+<body>
+<div id="app">
+    <button @click="recallMessage()">调用服务端向客户端发消息</button><br>
+    <button @click="recallJson()">调用服务端向客户端发JSON对象</button>
+    <hr/>
+    请输入要发送的消息:<input type="text" v-model="message"><br>
+    <button @click="sendMessage()">向服务端发送消息</button>
+</div>
+<script src="/js/socket.js"></script>
+</body>
+</html>
